@@ -1,9 +1,7 @@
-/* Step 9 */
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
-/* Step 10 */
 nav a {
     background-color:white;
     text-align: center;
@@ -11,27 +9,23 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }
-
 #hero-msg h1,
 #hero-msg h4 {
     text-align: center;
 }
-
 .button-box {
     text-align: center;
 }
-
 main section {
-    text-align: center;
+ text-align: center;
 }
-/* Sep 11 */
 #background {
     height: 725px;
     background-color: #a29e93;
     margin: 200px 0;
 }
-/* Step 12 */
 body {
+
     background-color:white;
     font-family: Raleway, Arial, sans-serif; 
     font-size: 22px;
@@ -44,7 +38,6 @@ h2 {
 header {
     background-color:#892f2f;
     }
-/* Step 13 */
 nav a:hover {
     background-color:black ;
     color: #7c682b ;
@@ -191,7 +184,6 @@ footer .social img{
 }
 .card-img{
     border:10px solid #194b19;
-     
 }
 main section img{
     box-sizing: border-box;
