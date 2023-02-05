@@ -1,13 +1,15 @@
+/* Step 9 */
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
-
+/* Step 10 */
 nav a {
-    background-color:white ;
+    background-color:white;
     text-align: center;
     color:#1b4332;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1,
@@ -22,63 +24,177 @@ nav a {
 main section {
     text-align: center;
 }
-
+/* Sep 11 */
 #background {
     height: 725px;
     background-color: #a29e93;
+    margin: 200px 0;
 }
-
+/* Step 12 */
 body {
-    background-color: #fcfbfb; 
-    font-size: 12px;
-}
+    background-color:white;
+    font-family: Raleway, Arial, sans-serif; 
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    }
+h2 {
+        margin: 0;
+    }
 header {
-    background-color:#1b4332;
-    
-}
+    background-color:#892f2f;
+    }
+/* Step 13 */
 nav a:hover {
     background-color:black ;
     color: #7c682b ;
 }
-
 .book, .join {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 18px;
     background-color:#7c682b ;
    text-align: center;
     color: white;
     text-decoration: none;
+    padding: 15px 30px;
 }
 .book:hover, .join:hover {
-    background-color: #28694e;
+    background-color:white;
     color: #958041 ;
+}
+#background {
+    height: 725px;
+}
+nav a {
+    text-align: center;
+    color: #958041;
+    text-decoration: white;
+    padding: 35px;
+}
+.home-title{
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+    line-height: 1.5em;
+    background-color: white;
+    color:#958041;
+}
+h4 {
+    background-color:white;
+    color:#958041;
+    
+}
+.book,
+.join {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    line-height: 1.5em;
+    background-color: #d0d6d5;
+    color:#958041;
+}
+.book:hover,
+.joint:hover{
+    background-color: #194b19;
+    color:#958041;
+}
+.msg h2{
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    background-color: #b8cec1;
+    color:#958041;
+}
+.msg p {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
+    background-color: #050815c4;
+    color:#958041;
+}
+.msg {
+    line-height: 1.5em;
+    background-color: #434846;
+    color: white;
+    padding: 35px;
+    margin: 200px 0;
+}
+footer{
+    background-color: #1c1306;
+    color:#958041;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer p {
+    font: size 1.2em;;
+}
+footer a {
+    background-color: #c6c5b3;
+    color:#958041;
+    text-align: center;
+    text-decoration: #e4bcbc;
+}
+footer a:hover{
+    background-color: #0a1f0d;
+    color:#785a5a;
+    text-decoration: underline;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+/* Step 14 */
+.icon {
+ width:80px;
+ padding-top: 10px;
+}
+.logo{
+width:80px;
+padding: 35px;
+}
+#logo_link{
+    padding-top:5px;
 }
 
-.msg {
-    background-color: #434846  ;
-    color: white;
+#hero-img{
+width: 100%;
 }
-footer {
-    background-color: #3c3c3c;
-    color: #958041 ;
+/* Step 15 */
+nav a {
+    text-align: center;
+    color: #958041;
+    text-decoration: white;
+    padding: 35px;
+}
+.book,
+.join{
+    background-color: #b8cec1;
+    color: #958041;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
 }
 footer a {
     text-align: center;
     color: #958041;
-    text-decoration: white;;
+    text-decoration: white;
 }
-.logo {
-    width: 80px;
-}
-.icon {
-    width: 80px;
-}
-footer a:hover{
-    color:white;
+footer p a:hover{
     text-decoration: underline;
 }
-footer p {
-    font-size: 1.2em;
+footer .social img{
+    padding-top: 15px;
 }
-
-
+.rivers-card, .camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+.card-img{
+    border:10px solid #194b19;
+     
+}
+main section img{
+    box-sizing: border-box;
+}
 
 
