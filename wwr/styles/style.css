@@ -119,13 +119,11 @@ footer{
     margin-top: 200px;
 }
 footer p {
-    font: size 1.2em;
-}
-footer a {
     background-color: #c6c5b3;
     color:#958041;
     text-align: center;
     text-decoration: #e4bcbc;
+    font: size 1.2em;
 }
 footer a:hover{
     background-color: #0a1f0d;
@@ -168,9 +166,10 @@ nav a {
     border-radius: 5px;
 }
 footer a {
+    background-color: #c6c5b3;
+    color:#958041;
     text-align: center;
-    color: #958041;
-    text-decoration: white;
+    text-decoration: #e4bcbc;
 }
 footer p a:hover{
     text-decoration: underline;
