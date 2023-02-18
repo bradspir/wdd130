@@ -107,7 +107,6 @@ h4 {
     margin: 200px 0;
 }
 footer{
-    background-color: #1c1306;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
@@ -115,18 +114,17 @@ footer{
     align-items: center;
 }
 footer p {
-    background-color: #c6c5b3;
     color:#958041;
     text-align: center;
     text-decoration: #e4bcbc;
     font: size 1.2em;
 }
 footer a:hover{
-    background-color: #0a1f0d;
-    color:#785a5a;
+     color:#785a5a;
     text-decoration: underline;
 }
 footer p a:hover {
+    background-color: #4c624f;
     text-decoration: underline;
 }
 .icon {
@@ -173,7 +171,6 @@ width: 100%;
     border-radius: 5px;
 }
 footer a {
-    background-color: #c6c5b3;
     color:#958041;
     text-align: center;
     text-decoration: #e4bcbc;
