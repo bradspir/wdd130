@@ -26,7 +26,7 @@ main section {
 }
 body {
 
-    background-color:white;
+    background-color:#0cbaea;
     font-family: Raleway, Arial, sans-serif; 
     font-size: 22px;
     margin: 0;
@@ -36,10 +36,12 @@ h2 {
         margin: 0;
     }
 header {
-    background-color:#892f2f;
-    }
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #194b19;
+}
 nav a:hover {
-    background-color:black ;
+    background-color:#928c8c ;
     color: #7c682b ;
 }
 .book, .join {
@@ -47,35 +49,26 @@ nav a:hover {
     font-size: 18px;
     background-color:#7c682b ;
    text-align: center;
-    color: white;
+    color: #9a8c8c;
     text-decoration: none;
     padding: 15px 30px;
 }
 .book:hover, .join:hover {
-    background-color:white;
+    background-color:#110202;
     color: #958041 ;
 }
 #background {
     height: 725px;
-}
-nav a {
-    text-align: center;
-    color: #958041;
-    text-decoration: white;
-    padding: 35px;
 }
 .home-title{
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
     line-height: 1.5em;
-    background-color: white;
-    color:#958041;
+    color:#a4aea2;
 }
 h4 {
-    background-color:white;
     color:#958041;
-    
 }
 .book,
 .join {
@@ -108,15 +101,19 @@ h4 {
 .msg {
     line-height: 1.5em;
     background-color: #434846;
-    color: white;
     padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #788949;
     margin: 200px 0;
 }
 footer{
     background-color: #1c1306;
-    color:#958041;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 footer p {
     background-color: #c6c5b3;
@@ -133,7 +130,6 @@ footer a:hover{
 footer p a:hover {
     text-decoration: underline;
 }
-/* Step 14 */
 .icon {
  width:80px;
  padding-top: 10px;
@@ -144,17 +140,29 @@ padding: 35px;
 }
 #logo_link{
     padding-top:5px;
+    justify-self: center;
+    align-self: center;
 }
-
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
 #hero-img{
 width: 100%;
 }
-/* Step 15 */
-nav a {
-    text-align: center;
-    color: #958041;
-    text-decoration: white;
-    padding: 35px;
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3; 
+    z-index: -1; 
+}
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px; 
+}
+#hero-msg h4{
+    color: #9c9595;  
 }
 .book,
 .join{
@@ -183,9 +191,99 @@ footer .social img{
 }
 .card-img{
     border:10px solid #194b19;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #575a4e;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.card-img, .mountains {
+    width: 100%;
 }
 main section img{
     box-sizing: border-box;
 }
+nav{
+    display: flex;
+    justify-content: space-around;  
+}
+.mountains {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #878981;
+}
+.home-grid{
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+}
+.rivers-card {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 2;
+  }
+  .camping-card {
+    grid-column: 5 / span 3;
+    grid-row: 2 / span 2;
+  }
+  .rapids-card {
+    grid-column: 8 / span 3;
+    grid-row: 2 / span 2;
+  }
+  #background {
+    grid-column: 1 / span 11;
+    grid-row: 4 / span 6;
+  }
+  .mountains {
+    grid-column: 2 / span 6;
+    grid-row: 5 / span 3;
+  }
+  
+  .msg {
+    grid-column: 6 / span 4;
+    grid-row: 6 / span 1;
+  }
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+            
 
 
