@@ -289,6 +289,8 @@ nav{
 }     
 main section {
     text-align: center;
+    margin-top:25px;
+    margin-bottom: 25px;
    }
    footer{
     background-color:#928764;
