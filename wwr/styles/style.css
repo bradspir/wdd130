@@ -171,7 +171,7 @@ width: 100%;
     border-radius: 5px;
 }
 footer a {
-    color:#958041;
+    background-color:#958041;
     text-align: center;
     text-decoration: #e4bcbc;
 }
@@ -280,6 +280,20 @@ nav{
         margin-top: 25px;
     }
 }
-            
+ #newPage
+ 
+  header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #4b6d4b;
+}     
+main section {
+    text-align: center;
+   }
+   footer{
+    background-color:#928764;
+    text-align: center;
+    text-decoration: #d7caca;
+   }     
 
 
