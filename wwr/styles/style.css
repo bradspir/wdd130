@@ -296,6 +296,12 @@ main section {
     background-color:#928764;
     text-align: center;
     text-decoration: #d7caca;
-   }     
-
+   }  
+   /* new css style for subpage */   
+   main section {
+    text-align: center;
+   }
+   .center-text {
+    text-align: center;
+  }
 
