@@ -1,98 +1,45 @@
-/* Set default styles for the page */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Style for the header section */
-  header {
+.container {
     display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.header {
+    grid-column: 1 / 13;
+    background-color:#556068;
+    color:#b5b0b0;
+    padding: 20px;
+}
+.main-content {
+    grid-column: 4 / 10;
+    background-color: #c7bcbc;
+    padding: 20px;
+}
+.featured-posts {
+    grid-column: 10 / 13;
+    background-color: #d6cece;
+    padding: 20px;
+}.footer {
+    grid-column: 1 / 13;
     background-color: #333;
-    color: #e4d9d9;
-  }
-  
-  header img {
-    max-height: 80px;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Style for the main section */
-  main {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, auto);
-    padding: 10px;
-  }
-  
-  h3 {
-    grid-column: 1 / span 10;
-    text-align: center;
-    font-size: 28px;
-    margin: 20px 0;
-  }
-  
-  section {
-    grid-column: 2 / span 8;
-    grid-row: 3 / span 7;
-    padding: 10px;
-    background-color: #f5f5f5;
-  }
-  
-  section p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 10px 0;
-  }
-  
-  section img {
-    display: block;
-    max-width: 100%;
-    margin: 20px 0;
-  }
-  
-  /* Style for the footer section */
-  footer {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .social {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .social img {
-    max-height: 30px;
-    margin: 0 5px;
-  }
-  
+    color: #d8cccc;
+    padding: 20px;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .sidebar {
+        grid-column: 1 / 7;
+    }
+
+    .main-content {
+        grid-column: 1 / 7;
+    }
+
+    .featured-posts {
+        grid-column: 1 / 7;
+    }
+}
