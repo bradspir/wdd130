@@ -1,45 +1,220 @@
-.body {
+/****************************************************************
+*
+* Default tag properties *
+*
+*****************************************************************/
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    color: #584a2a;
+}
+
+header img{
+    max-width: 200px;
+    width: 200%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4
+{
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    color: #297373;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/****************************************************************
+* *
+* default properties for all pages *
+* *
+*****************************************************************/
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/*  This rule name changes based upon the default button color   */
+.btn-blue {
+    background-color: #0b00a4;
+    padding: 1em 2em;
+    color: #d7fcd4;
+}
+
+.buttons {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 30px;
+    border-radius: 20px;
+}
+
+/*  This is the default grid layout for all grids. Other grids can be defined as needed. */
+.grid-default {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
+    gap: 3em 0;
+}
+.home-grid{
+     display:grid;
+     grid-template-columns:repeat(10,1fr);
+
+}
+img {
+    max-width: none 5px;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+  }
+.logo img{
+    grid-column:1/2;
+    grid-row:1/3;
+}
+/****************************************************************
+* *
+* header area properties *
+* *
+*****************************************************************/
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    background-color:  #163114;
 }
 
-.header {
-    grid-column: 1 / 13;
-    background-color:#556068;
-    color:#b5b0b0;
-    padding: 20px;
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    justify-items: center;
 }
-.main-content {
-    grid-column: 4 / 10;
-    background-color: #c7bcbc;
-    padding: 20px;
+nav a {
+    text-align: center;
+    color:#345c4b;
+    text-decoration: none;
+    padding: 35px;
 }
-.featured-posts {
-    grid-column: 10 / 13;
-    background-color: #d6cece;
-    padding: 20px;
-}.footer {
-    grid-column: 1 / 13;
-    background-color: #333;
-    color: #d8cccc;
-    padding: 20px;
+
+.icon {
+    width:80px;
+    padding-top: 10px;
+   }
+   .logo{
+   width:80px;
+   padding: 35px;
+   }
+   #logo_link{
+       padding-top:5px;
+       justify-self: center;
+       align-self: center;
+   }
+
+
+/****************************************************************
+* *
+* footer area properties *
+* *
+*****************************************************************/
+footer {
+    background-color: #8c92c8;
+    color: #d7fcd4;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 200px;
 }
-@media screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: repeat(6, 1fr);
+footer .social img{
+    padding-top: 30px;
+}
+.book,
+.join{
+    background-color: #b8cec1;
+    color: #958041;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+footer a {
+    background-color:#43a2a2;
+    text-align: center;
+    text-decoration: #e4bcbc;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #b4afaf;
+    border-radius: 1em;
+    grid-column: 3/9;
+  }
+@media screen and (max-width: 800px) {
+  
+    nav, footer {
+        flex-direction: column;
     }
-
-    .sidebar {
-        grid-column: 1 / 7;
+    nav a {
+        display: block;
+        padding: 30px;
+        margin: 2px;
+        max-width: 150px;
     }
-
-    .main-content {
-        grid-column: 1 / 7;
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
     }
+   
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
 
-    .featured-posts {
-        grid-column: 1 / 7;
     }
 }
