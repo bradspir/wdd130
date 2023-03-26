@@ -1,0 +1,130 @@
+/******************************************************************************
+START grid layout extra credit
+******************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2em 1rem;
+  background-color: #d6e3e7;
+}
+
+.grid1 h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+  background-color: lightgreen;
+  padding: 1rem;
+}
+
+.grid2 h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  background-color: lightpink;
+  padding: 1rem;
+}
+
+.grid3 h3 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: lightcoral;
+  padding: 1rem;
+}
+
+.grid4 h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: lightskyblue;
+  padding: 1rem;
+}
+
+section h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: lightyellow;
+  padding: 1rem;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+fieldset > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 0 1rem;
+  align-items: center;
+}
+
+label {
+  text-align: right;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  justify-self: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: lightblue;
+  color: white;
+  font-size: 1.2rem;
+}
+
+section > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  background-color: lightgrey;
+  padding: 1rem;
+}
+
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: lightsalmon;
+  padding: 1rem;
+}
+
+.grid5 h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+}
