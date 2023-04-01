@@ -128,3 +128,138 @@ section > div {
   text-align: center;
   color: white;
 }
+/******************************************************************************
+START grid layout extra credit
+******************************************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Grid 1 */
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2em 1rem;
+  background-color: #c5bd2a;
+}
+
+.grid1 h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Grid 2 */
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #8a54d1;
+  padding: 1rem;
+}
+
+.grid2 h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Grid 3 */
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #817979;
+  padding: 1rem;
+}
+
+.grid3 h3 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Grid 4 */
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #0c3630;
+  padding: 1rem;
+}
+
+.grid4 h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Grid 5 / Section */
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #0a27b7;
+  padding: 1rem;
+}
+
+section h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Forms Grid 6 & 7, Fieldset, div */
+form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #b3b3b3;
+  padding: 1rem;
+}
+
+fieldset {
+  grid-column: 4 / -4;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  background-color: #999999;
+  padding: 1rem;
+  grid-gap: 0 1em;
+}
+
+legend {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+fieldset > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+label {
+  grid-column: 1 / -2;
+  text-align: right;
+}
+
+input {
+  grid-column: 2 / -1;
+  width: 100%;
+  text-align: left;
+}
+
+button {
+  grid-column: 1 / -1;
+  margin: 1rem auto;
+  display: block;
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+section > div {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #b3b3b3;
+  grid-column: 1 / -1;
+}
+
+

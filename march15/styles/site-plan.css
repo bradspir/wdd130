@@ -72,7 +72,7 @@ header {
   padding: 1em;
   text-align: center;
   color: #beb5b5;
-  background-color: #396E94;
+  background-color: #191b1d;
 }
 
 header>h1,
@@ -127,7 +127,7 @@ nav {
   background-color: #b2a675;
   line-height: 3em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 nav {
@@ -138,7 +138,7 @@ nav {
 
 nav a {
   padding: 1em;
-  min-width: 120px;
+  min-width: 200px;
   text-decoration: none;
   padding: 10px;
 
@@ -146,7 +146,7 @@ nav a {
 
 nav a:link,
 nav a:visited {
-  color: #6b7d8a;
+  color: #839bac;
 }
 
 nav a:hover {
