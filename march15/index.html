@@ -1,144 +1,159 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    
-  <head>
-    <meta charset="utf-8">
-    <title>Kapingamarangi</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapingamarangi Home Page</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="content">
     <header>
       <a href="index.html" class="logo">
-      <img src="image/logo.jpg" alt="logo image">
+        <img src="image/logo.jpg" alt="logo image">
       </a>
       <nav>
         <a href="index.html">Home</a>
         <a href="know-about-us.html">Know About Us</a>
         <a href="activity.html">Activities</a>
       </nav>
-      </header>
-    <main>
-      <h3>Home page</h3>
-      <div class="bg-img">
-        <form action="/action_page.php" class="container">
-          <h1>Login</h1>
+    </header>
+   <main class="grid-default">
       
+        <form action="/action_page.php">
+          <h3>Login</h3>
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
-      
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
+          <input type="password" placeholder="Enter Password" name="psw"
+            required>
           <button type="submit" class="btn">Login</button>
+        <button class="btn" onclick="document.getElementById('id01')">Sign Up</button>
         </form>
-      </div>
-      <body>
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
-        
-        <div id="id01" class="modal">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <form class="modal-content" action="/action_page.php">
-            <div class="container">
-              <h1>Sign Up</h1>
-              <p>Please fill in this form to create an account.</p>
-              <hr>
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required>
-        
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-        
-              <label for="psw-repeat"><b>Repeat Password</b></label>
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-              
-              <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-              </label>
-        
-              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-        
-              <div class="clearfix">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        
-        <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-        </script>
-        
-      <img src="image/img.jpg" alt="image for homepage">
-      <setion>
-<p>Kapingamarangi Thanksgiving Day is a time for us to reflect on all the things that we are thankful for in life. It's a day when family and friends come together to enjoy a delicious meal and create lasting memories. 
-        
-At Kapingamarangi, we believe that Thanksgiving Day is a special occasion that should be celebrated with joy and gratitude. Here's why you should join us this year for a memorable Thanksgiving Day experience.</p>
-
-<p>Our Thanksgiving Day celebration is a true reflection of our culture and values. We believe in the importance of family and community, and we celebrate this by bringing people together to share a meal 
-
-and connect with each other. Our celebration is open to all members of the community, regardless of age or background, and we welcome anyone who wishes to join us in the spirit of Thanksgiving.</p>
-
-<p>At Kapingamarangi, we take pride in our food and hospitality. Our Thanksgiving Day menu is a feast for the senses, featuring an array of traditional dishes that are sure to please everyone's taste buds. 
-
-From roasted ills to pounding taro and all kind of local foods, our menu is designed to bring people together and create a sense of warmth and comfort. The special thing about our menu is that we do have our  
-
-very own dishes for our thanksgiving, we usually have roasted ills and pounding taros.</p>
-
-<p>This traditional menu comes once a year, and it's very tasteful and fun to enjoy on thanksgivng day. It is our only local special dishes to serve on our thanksgiving day. It has its own meaning, for the taro- 
-  
-  as a reminder for the labors of those yesterday for our blessings of today. And for the ills- is our king of the sea and for us to include it in the menu, as something to remind us the blessings of the sea. 
-  
-  So however on our thanksgiving day we get ills and taro, serve them as a special menu of our very own thanksgiving day.</p>
-
- <p>But Thanksgiving Day is more than just a meal. It's a time to reflect on the blessings in our lives and express gratitude for all that we have. At Kapingamarangi, we believe that gratitude is a key component 
-
-of a happy and fulfilling life, and we encourage our guests to take time to reflect on the things they are thankful for. In addition to the meal, we have a variety of activities and events planned for Thanksgiving Day. </p>
-
-<p>We have games and entertainment for children and adults alike, as well as cultural performances and demonstrations that showcase our unique heritage and traditions. Our Thanksgiving Day celebration is a true community event, 
-
-and we strive to make it a memorable experience for everyone who attends.But our Thanksgiving Day celebration is about more than just having a good time. We believe that it's important to give back to our community and help those 
-
-in needs, we can help ensure that everyone in our community has a warm meal and a place to call home on Thanksgiving Day.</p>
-
-<p>In conclusion, Thanksgiving Day at Kapingamarangi is a celebration of family, community, and gratitude. We believe that it's important to come together and share a meal, connect with others, and express gratitude for all the 
-
-blessings in our lives. Our celebration is open to all members of the community, and we encourage everyone to join us for a memorable and meaningful Thanksgiving Day experience. We hope to see you there!</p>
-
-
-        <img src="image/image.jpeg" alt="image for homepage">
-
-      </ul>
-      </setion>
+ 
+        <img src="image/img.jpg" alt="image for homepage" class="hp-img">
+        <section  class="hp-text">
+          <p>Kapingamarangi Thanksgiving Day is a time for us to reflect on all
+            the things that we are thankful for in life. It's a day when family
+            and friends come together to enjoy a delicious meal and create
+            lasting memories. At Kapingamarangi, we believe that Thanksgiving
+            Day is a special occasion that should be celebrated with joy and
+            gratitude. Here's why you should join us this year for a memorable
+            Thanksgiving Day experience.</p>
+          <p>Our Thanksgiving Day celebration is a true reflection of our
+            culture and values. We believe in the importance of family and
+            community, and we celebrate this by bringing people together to
+            share a meal and connect with each other. Our celebration is open to
+            all members of the community, regardless of age or background, and
+            we welcome anyone who wishes to join us in the spirit of
+            Thanksgiving.</p>
+          <p>At Kapingamarangi, we take pride in our food and hospitality. Our
+            Thanksgiving Day menu is a feast for the senses, featuring an array
+            of traditional dishes that are sure to please everyone's taste buds.
+            From roasted ills to pounding taro and all kind of local foods, our
+            menu is designed to bring people together and create a sense of
+            warmth and comfort. The special thing about our menu is that we do
+            have our very own dishes for our thanksgiving, we usually have
+            roasted ills and pounding taros.</p>
+          <p>This traditional menu comes once a year, and it's very tasteful and
+            fun to enjoy on thanksgivng day. It is our only local special dishes
+            to serve on our thanksgiving day. It has its own meaning, for the
+            taro- as a reminder for the labors of those yesterday for our
+            blessings of today. And for the ills- is our king of the sea and for
+            us to include it in the menu, as something to remind us the
+            blessings of the sea. So however on our thanksgiving day we get ills
+            and taro, serve them as a special menu of our very own thanksgiving
+            day.</p>
+          <p>But Thanksgiving Day is more than just a meal. It's a time to
+            reflect on the blessings in our lives and express gratitude for all
+            that we have. At Kapingamarangi, we believe that gratitude is a key
+            component of a happy and fulfilling life, and we encourage our
+            guests to take time to reflect on the things they are thankful for.
+            In addition to the meal, we have a variety of activities and events
+            planned for Thanksgiving Day. </p>
+          <p>We have games and entertainment for children and adults alike, as
+            well as cultural performances and demonstrations that showcase our
+            unique heritage and traditions. Our Thanksgiving Day celebration is
+            a true community event, and we strive to make it a memorable
+            experience for everyone who attends.But our Thanksgiving Day
+            celebration is about more than just having a good time. We believe
+            that it's important to give back to our community and help those in
+            needs, we can help ensure that everyone in our community has a warm
+            meal and a place to call home on Thanksgiving Day.</p>
+          <p>In conclusion, Thanksgiving Day at Kapingamarangi is a celebration
+            of family, community, and gratitude. We believe that it's important
+            to come together and share a meal, connect with others, and express
+            gratitude for all the blessings in our lives. Our celebration is
+            open to all members of the community, and we encourage everyone to
+            join us for a memorable and meaningful Thanksgiving Day experience.
+            We hope to see you there!</p>
+          <img src="image/image.jpeg" alt="image for homepage">
+          
+        </section>
     </main>
-
-  <footer>
-    <p>Site Plan &copy; 2023 - Bradley Spirin</p>
-    <a href="">Privacy Policy</a>
-    <a href="">Terms of Use</a>
-    <a href="site-plan.html">Site Plan</a>
-    <div class="social">
-      <a href="https://facebook.com">
-          <img src="images/facebook.png" alt="fb icon">
-      </a>
-      <a href="https://twitter.com">
-          <img src="images/twitter.png" alt="twitter icon">
-      </a>
-      <a href="https://instagram.com">
-          <img src="images/instagram.png" alt="instagram icon">
-      </a>
+    <footer>
+      <p>Site Plan &copy; 2023 - Bradley Spirin</p>
+      <!-- <a href="">Privacy Policy</a>
+    <a href="">Terms of Use</a> -->
+    <a href="site-plan.html" class="site-plan">Site Plan</a>
+      <div class="social">
+        <a href="https://facebook.com">
+          <img src="image/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com">
+          <img src="image/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com">
+          <img src="image/instagram.png" alt="instagram icon">
+        </a>
       </div>
-</footer>
+    </footer>
+  </div>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw"
+                required>
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password"
+                name="psw-repeat" required>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"
+                    style="margin-bottom:15px"> Remember me </label>
+            <p>By creating an account you agree to our <a href="#"
+                    style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <div class="clearfix">
+                <button type="button"
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
 </div>
-  </body>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
 
 </html>
