@@ -27,6 +27,7 @@ h4 {
   font-weight: 700;
   color: #076363;
   margin:auto;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -260,9 +261,10 @@ button:hover {
   float: left;
   width: 50%;
 }
-
-
-
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
 /* The Modal (background) */
 .modal {
   display: none;
@@ -335,4 +337,10 @@ hr {
     width: 100%;
   }
 
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
 }
