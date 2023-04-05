@@ -108,8 +108,8 @@ h4 {
     margin: 200px 0;
 }
 footer{
-    padding: 25px 50px;
-    margin-top: 200px;
+    padding: 50px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -129,8 +129,8 @@ footer p a:hover {
     text-decoration: underline;
 }
 .icon {
- width:80px;
- padding-top: 10px;
+ width:40px;
+ 
 }
 .logo{
 width:80px;
@@ -181,6 +181,8 @@ footer p a:hover{
 }
 footer .social img{
     padding-top: 15px;
+    margin:0%;
+    grid-template-columns: 6/6;
 }
 .rivers-card, .camping-card,
 .rapids-card {
