@@ -154,6 +154,7 @@ footer {
 
 footer .social img {
   padding-top: 30px;
+  margin:auto;
 }
 
 .book,
@@ -318,7 +319,6 @@ hr {
   clear: both;
   display: table;
 }
-
 @media screen and (max-width: 900px) {
 
   header,
